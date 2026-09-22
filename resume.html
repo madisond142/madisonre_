@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume and professional credentials of Madison DeLoach - Education, Technical Skills, and Experience in ISDS.">
+  <meta name="author" content="Madison DeLoach">
+  <title>Resume | Madison DeLoach</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="main-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="index.html" class="brand-logo" id="brand-logo-link">
+        <span class="brand-badge">MD</span>
+        <span>Madison DeLoach</span>
+      </a>
+      <ul class="nav-menu" id="primary-nav-menu">
+        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="resume.html" class="nav-link active" id="nav-resume">Resume</a></li>
+        <li><a href="project.html" class="nav-link" id="nav-projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container" style="padding-top: 3.5rem; padding-bottom: 4rem;">
+
+      <!-- Header with Action -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 3rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 2rem;">
+        <div>
+          <span class="section-tag">Curriculum Vitae</span>
+          <h1 id="resume-title" style="margin-bottom: 0.5rem;">Resume & Experience</h1>
+          <p style="margin-bottom: 0;">Comprehensive overview of my education, academic milestones, and core competencies.</p>
+        </div>
+        <div>
+          <button onclick="window.print()" class="btn btn-secondary" id="btn-print-resume">
+            🖨️ Print / Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <section class="resume-section" id="education-section">
+        <h2 id="education-heading">🎓 Education</h2>
+        <div class="timeline" id="education-timeline">
+          <div class="timeline-item" id="edu-item-1">
+            <div class="timeline-header">
+              <span class="timeline-role">Bachelor of Science in Information Systems & Decision Sciences</span>
+              <span class="timeline-meta">Expected 2026</span>
+            </div>
+            <div class="timeline-institution">E. J. Ourso College of Business</div>
+            <p>
+              Focused on the intersection of modern technology infrastructure, database architecture, data analytics, and organizational decision-making.
+            </p>
+            <ul class="timeline-bullets">
+              <li><strong>Relevant Coursework:</strong> Information Systems Development, Quantitative Decision Models, Economic Analysis & Markets, Database Management Systems.</li>
+              <li>Active participation in business technology forums and collaborative development projects.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills Matrix -->
+      <section class="resume-section" id="skills-section">
+        <h2 id="skills-heading">🛠️ Core Competencies & Skills</h2>
+        <div class="skills-grid" id="skills-matrix">
+          
+          <div class="skills-category" id="skill-cat-analytics">
+            <h3>📈 Analytics & Decision Science</h3>
+            <p>Quantitative analysis, forecasting, and data interpretation methods.</p>
+            <div class="tag-list">
+              <span class="tag">Excel Modeling</span>
+              <span class="tag">Quantitative Analysis</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Statistical Modeling</span>
+            </div>
+          </div>
+
+          <div class="skills-category" id="skill-cat-tech">
+            <h3>💻 Technical & Web Skills</h3>
+            <p>Core programming, markup, and database foundations.</p>
+            <div class="tag-list">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">SQL Foundations</span>
+            </div>
+          </div>
+
+          <div class="skills-category" id="skill-cat-business">
+            <h3>🤝 Professional & Systems</h3>
+            <p>Strategic methodologies and project management concepts.</p>
+            <div class="tag-list">
+              <span class="tag">Agile Methodology</span>
+              <span class="tag">Scrum Practices</span>
+              <span class="tag">Systems Analysis</span>
+              <span class="tag">Process Optimization</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Experience & Academic Projects -->
+      <section class="resume-section" id="experience-section">
+        <h2 id="experience-heading">💼 Experience & Key Projects</h2>
+        <div class="timeline" id="experience-timeline">
+          
+          <div class="timeline-item" id="exp-item-1">
+            <div class="timeline-header">
+              <span class="timeline-role">Web Project Contributor & Analyst</span>
+              <span class="timeline-meta">2025 – Present</span>
+            </div>
+            <div class="timeline-institution">Academic Technology & Agile Projects</div>
+            <ul class="timeline-bullets">
+              <li>Architected and deployed responsive web interfaces adhering to modern accessibility and semantic standards.</li>
+              <li>Collaborated within agile teams to iterate on requirements, sprint milestones, and continuous GitHub deployment.</li>
+              <li>Structured clean codebase organization using version control best practices and branch management.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" id="exp-item-2">
+            <div class="timeline-header">
+              <span class="timeline-role">Economics & Decision Sciences Research Analyst</span>
+              <span class="timeline-meta">2024 – 2025</span>
+            </div>
+            <div class="timeline-institution">Decision Analysis Projects</div>
+            <ul class="timeline-bullets">
+              <li>Formulated multi-variable models evaluating production possibilities and market dynamics under constraints.</li>
+              <li>Synthesized complex analytical findings into executive summaries and structured presentations.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="main-footer">
+    <div class="container footer-content">
+      <div class="social-links" id="footer-social-links">
+        <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer" class="social-link" id="link-github">GitHub</a>
+        <a href="index.html" class="social-link" id="link-footer-home">Home</a>
+        <a href="project.html" class="social-link" id="link-footer-projects">Projects</a>
+      </div>
+      <p class="copyright" id="footer-copyright">
+        &copy; 2026 Madison DeLoach. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

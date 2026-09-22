@@ -3,13 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta name="description" content="Personal portfolio and website of Madison DeLoach - Information Systems, Business Analytics, and Web Development.">
+  <meta name="author" content="Madison DeLoach">
+  <title>Madison DeLoach | Personal Website & Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a starter page.</p>
 
-  <script src="script.js"></script>
+  <!-- Navigation Bar -->
+  <header class="site-header" id="main-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="index.html" class="brand-logo" id="brand-logo-link">
+        <span class="brand-badge">MD</span>
+        <span>Madison DeLoach</span>
+      </a>
+      <ul class="nav-menu" id="primary-nav-menu">
+        <li><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="resume.html" class="nav-link" id="nav-resume">Resume</a></li>
+        <li><a href="project.html" class="nav-link" id="nav-projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="status-pill" id="status-badge">
+          <span class="status-dot"></span>
+          <span>Information Systems & Decision Sciences</span>
+        </div>
+        
+        <h1 id="hero-title">
+          Hi, I'm <span class="gradient-text">Madison DeLoach</span>
+        </h1>
+        
+        <p class="hero-subtitle" id="hero-description">
+          Welcome to my personal website! I specialize in bridging technology, data analytics, and business strategy to build smart systems and intuitive digital experiences.
+        </p>
+
+        <div class="btn-group" id="hero-actions">
+          <a href="project.html" class="btn btn-primary" id="hero-btn-projects">View Projects →</a>
+          <a href="resume.html" class="btn btn-secondary" id="hero-btn-resume">Explore Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Pillars / About Section -->
+    <section id="about-pillars">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I Do</span>
+          <h2>Focus & Expertise</h2>
+        </div>
+
+        <div class="card-grid" id="pillars-grid">
+          <article class="card" id="pillar-analytics">
+            <span class="card-icon" aria-hidden="true">📊</span>
+            <h3>Data Analytics & Modeling</h3>
+            <p>
+              Transforming complex data sets into actionable insights using structured quantitative models, spreadsheet engineering, and analytical frameworks.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Excel Modeling</span>
+              <span class="tag">Quantitative Analysis</span>
+              <span class="tag">Decision Sciences</span>
+            </div>
+          </article>
+
+          <article class="card" id="pillar-systems">
+            <span class="card-icon" aria-hidden="true">⚡</span>
+            <h3>Information Systems</h3>
+            <p>
+              Designing and optimizing enterprise workflows, database structures, and business processes to improve efficiency and scalability.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Database Architecture</span>
+              <span class="tag">Systems Analysis</span>
+              <span class="tag">Process Optimization</span>
+            </div>
+          </article>
+
+          <article class="card" id="pillar-web">
+            <span class="card-icon" aria-hidden="true">💻</span>
+            <h3>Web & Digital Solutions</h3>
+            <p>
+              Creating modern, accessible, and responsive web interfaces designed for seamless user interaction and robust technical foundations.
+            </p>
+            <div class="tag-list">
+              <span class="tag">HTML5 & CSS3</span>
+              <span class="tag">Responsive UI</span>
+              <span class="tag">Agile Delivery</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Spotlight Section -->
+    <section id="featured-spotlight" style="border-top: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2>Highlighted Projects & Coursework</h2>
+        </div>
+
+        <div class="card-grid" id="spotlight-grid">
+          <article class="card project-card" id="spotlight-card-1">
+            <div class="project-body">
+              <h3>Web Architecture & Agile Delivery</h3>
+              <p>
+                Collaborative web systems development adhering to agile methodologies and responsive design patterns.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Web Design</span>
+                <span class="tag">Agile</span>
+                <span class="tag">GitHub</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="project.html" class="project-link" id="link-project-details">Learn more in Projects →</a>
+            </div>
+          </article>
+
+          <article class="card project-card" id="spotlight-card-2">
+            <div class="project-body">
+              <h3>Economic Resource Optimization</h3>
+              <p>
+                Analytical evaluation of production possibilities and market dynamics for decision sciences.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Decision Sciences</span>
+                <span class="tag">Economics</span>
+                <span class="tag">Analysis</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="project.html" class="project-link" id="link-project-economics">Learn more in Projects →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="main-footer">
+    <div class="container footer-content">
+      <div class="social-links" id="footer-social-links">
+        <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer" class="social-link" id="link-github">GitHub</a>
+        <a href="resume.html" class="social-link" id="link-footer-resume">Resume</a>
+        <a href="project.html" class="social-link" id="link-footer-projects">Projects</a>
+      </div>
+      <p class="copyright" id="footer-copyright">
+        &copy; 2026 Madison DeLoach. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
