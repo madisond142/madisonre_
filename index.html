@@ -3,166 +3,428 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio and website of Madison DeLoach - Information Systems, Business Analytics, and Web Development.">
+  <meta name="description" content="Personal portfolio of Madison DeLoach - Information Systems student at LSU with a concentration in Business Analytics. Expected graduation December 2027.">
   <meta name="author" content="Madison DeLoach">
-  <title>Madison DeLoach | Personal Website & Portfolio</title>
+  <title>Madison DeLoach | Business Analytics & Information Systems</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- EDIT HERE: Navigation -->
   <header class="site-header" id="main-header">
     <nav class="nav-container" aria-label="Main Navigation">
       <a href="index.html" class="brand-logo" id="brand-logo-link">
         <span class="brand-badge">MD</span>
-        <span>Madison DeLoach</span>
+        <span class="brand-name">Madison DeLoach</span>
       </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav-menu">
+        <span class="hamburger-box">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </span>
+      </button>
+
+      <!-- Navigation Links -->
       <ul class="nav-menu" id="primary-nav-menu">
-        <li><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
-        <li><a href="resume.html" class="nav-link" id="nav-resume">Resume</a></li>
-        <li><a href="project.html" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main id="main-content">
 
-    <!-- Hero Section -->
+    <!-- EDIT HERE: Section 1 - Hero -->
     <section class="hero-section" id="hero">
-      <div class="container">
-        <div class="status-pill" id="status-badge">
-          <span class="status-dot"></span>
-          <span>Information Systems & Decision Sciences</span>
-        </div>
+      <div class="container hero-grid">
         
-        <h1 id="hero-title">
-          Hi, I'm <span class="gradient-text">Madison DeLoach</span>
-        </h1>
-        
-        <p class="hero-subtitle" id="hero-description">
-          Welcome to my personal website! I specialize in bridging technology, data analytics, and business strategy to build smart systems and intuitive digital experiences.
-        </p>
+        <!-- Left Column: Bio & Intro -->
+        <div class="hero-text">
+          <div class="hero-pill-badge">
+            <span class="hero-pill-dot"></span>
+            <span>ISDS Major &bull; Concentration in Business Analytics</span>
+          </div>
 
-        <div class="btn-group" id="hero-actions">
-          <a href="project.html" class="btn btn-primary" id="hero-btn-projects">View Projects →</a>
-          <a href="resume.html" class="btn btn-secondary" id="hero-btn-resume">Explore Resume</a>
+          <h1 class="hero-title">Madison DeLoach</h1>
+          <p class="hero-intro">
+            [Information Systems student at LSU with a concentration in Analytics &bull; Expected Graduation: December 2027]
+          </p>
+
+          <div class="btn-group">
+            <a href="resume.html" class="btn btn-primary" id="btn-hero-resume">View Resume</a>
+            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Contact Me</a>
+          </div>
+
+          <!-- Quick Highlight Chips -->
+          <div class="hero-highlights">
+            <span class="highlight-chip">🎓 LSU E. J. Ourso College of Business</span>
+            <span class="highlight-chip">📈 Concentration: Business Analytics</span>
+            <span class="highlight-chip">🗓️ Expected Dec 2027</span>
+            <span class="highlight-chip">📊 SQL & Advanced Excel Modeling</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Dedicated Photo Showcase Spot -->
+        <div class="hero-photo-showcase">
+          <div class="photo-glow-bg" aria-hidden="true"></div>
+
+          <div class="photo-frame">
+            <!-- EDIT HERE: Photo Spot
+                 =========================================================
+                 To put your real photo here:
+                 1. Save your photo file in this project folder (e.g., "madison.jpg")
+                 2. Replace the entire <div class="photo-placeholder-box"> below with:
+                    <img src="madison.jpg" alt="Madison DeLoach" class="portrait-photo">
+                 ========================================================= -->
+            <div class="photo-inner">
+              <div class="photo-placeholder-box">
+                <div class="photo-avatar-initials">MD</div>
+                <div class="photo-upload-hint">
+                  <span>📷 Spot for Your Picture</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Accent Badges -->
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">🎓</span>
+              <span>LSU ISDS (Analytics) &bull; Dec 2027</span>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon">💼</span>
+              <span>Open to Opportunities</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDIT HERE: Section 2 - About Me -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2>Background & Profile</h2>
+          <div class="section-underline"></div>
+        </div>
+        <div class="about-card">
+          <p>
+            [Write a brief 2-3 sentence paragraph about yourself here. For example: I am an Information Systems & Decision Sciences student at Louisiana State University with a dedicated concentration in Business Analytics, graduating in December 2027. My academic coursework and hands-on practice focus on database management, SQL querying, and quantitative spreadsheet modeling to transform operational data into clear business insights. I am passionate about utilizing data-driven analysis to improve efficiency, support strategic decision-making, and streamline enterprise workflows.]
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Core Pillars / About Section -->
-    <section id="about-pillars">
+    <!-- EDIT HERE: Section 3 - Skills (Focused on Analytics & Data) -->
+    <section class="skills-section" id="skills">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">What I Do</span>
-          <h2>Focus & Expertise</h2>
+          <span class="section-tag">Analytics Toolkit</span>
+          <h2>Skills & Competencies</h2>
+          <div class="section-underline"></div>
+        </div>
+        
+        <div class="card">
+          <h3 class="skill-group-title">
+            <span class="skill-category-icon" aria-hidden="true">📊</span>
+            <span>Data, Databases & Business Analytics</span>
+          </h3>
+          <p class="card-description">
+            Core analytical, relational, and decision science competencies used to structure, query, and evaluate business data.
+          </p>
+          <div class="skill-pills">
+            <span class="skill-pill">SQL <span class="skill-learning">(learning)</span></span>
+            <span class="skill-pill">Microsoft Excel (Advanced Modeling & Formulas)</span>
+            <span class="skill-pill">PivotTables & Data Analysis</span>
+            <span class="skill-pill">Database Design (ER Diagrams & Relational Schemas)</span>
+            <span class="skill-pill">Quantitative Decision Modeling</span>
+            <span class="skill-pill">Systems Analysis & Process Flow</span>
+            <span class="skill-pill">Agile / Scrum Methodologies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT HERE: Section 4 - Featured Projects (Focused on Analytics) -->
+    <section class="featured-project-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Applied Analytics</span>
+          <h2>Featured Analytics Projects</h2>
+          <div class="section-underline"></div>
         </div>
 
-        <div class="card-grid" id="pillars-grid">
-          <article class="card" id="pillar-analytics">
-            <span class="card-icon" aria-hidden="true">📊</span>
-            <h3>Data Analytics & Modeling</h3>
-            <p>
-              Transforming complex data sets into actionable insights using structured quantitative models, spreadsheet engineering, and analytical frameworks.
+        <div class="card-grid">
+          <!-- Project 1: SQL & Relational Database Analytics -->
+          <article class="featured-project-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <h3 class="card-title">SQL & Relational Database Analytics</h3>
+              <span class="status-badge" style="font-size: 0.76rem;">Featured Case Study</span>
+            </div>
+            <p class="card-description">
+              Relational database design and structured SQL querying to analyze business transactions. Covers Entity-Relationship modeling, 3NF schema normalization, multi-table JOIN operations, and data aggregation for managerial insights.
             </p>
             <div class="tag-list">
-              <span class="tag">Excel Modeling</span>
-              <span class="tag">Quantitative Analysis</span>
-              <span class="tag">Decision Sciences</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Database Design</span>
+              <span class="tag">ER Modeling</span>
+              <span class="tag">Relational Schemas</span>
+            </div>
+            <div class="project-meta-bar">
+              <span style="font-size: 0.88rem; color: var(--text-muted);">Database Analytics</span>
+              <a href="project.html" class="project-link-btn" id="link-featured-case-study">
+                View Analytics Case Study &rarr;
+              </a>
             </div>
           </article>
 
-          <article class="card" id="pillar-systems">
-            <span class="card-icon" aria-hidden="true">⚡</span>
-            <h3>Information Systems</h3>
-            <p>
-              Designing and optimizing enterprise workflows, database structures, and business processes to improve efficiency and scalability.
-            </p>
-            <div class="tag-list">
-              <span class="tag">Database Architecture</span>
-              <span class="tag">Systems Analysis</span>
-              <span class="tag">Process Optimization</span>
+          <!-- Project 2: Academic Coursework Project Placeholder -->
+          <article class="card" style="border-top: 4px solid var(--gold);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <h3 class="card-title">[Academic Coursework / Analytics Project]</h3>
+              <span class="status-badge">
+                <span class="status-badge-dot"></span>Coursework
+              </span>
             </div>
-          </article>
-
-          <article class="card" id="pillar-web">
-            <span class="card-icon" aria-hidden="true">💻</span>
-            <h3>Web & Digital Solutions</h3>
-            <p>
-              Creating modern, accessible, and responsive web interfaces designed for seamless user interaction and robust technical foundations.
+            <p class="card-description">
+              [Coursework project placeholder: Add an LSU ISDS, Economics, or Business assignment here. For example: A spreadsheet modeling project, economic market analysis, or quantitative database assignment completed during your classes.]
             </p>
             <div class="tag-list">
-              <span class="tag">HTML5 & CSS3</span>
-              <span class="tag">Responsive UI</span>
-              <span class="tag">Agile Delivery</span>
+              <span class="tag">[Excel / Tool]</span>
+              <span class="tag">Analytics</span>
+              <span class="tag">LSU Coursework</span>
+            </div>
+            <div class="project-meta-bar">
+              <span style="font-size: 0.88rem; color: var(--text-muted);">Academic Project</span>
+              <span style="font-size: 0.88rem; font-weight: 600; color: var(--gold-dark);">[Update with course project]</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Featured Spotlight Section -->
-    <section id="featured-spotlight" style="border-top: 1px solid var(--border-subtle);">
+    <!-- EDIT HERE: Section 5 - Certifications -->
+    <section class="certifications-section" id="certifications">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Featured Work</span>
-          <h2>Highlighted Projects & Coursework</h2>
+          <span class="section-tag">Credentials</span>
+          <h2>Certifications</h2>
+          <div class="section-underline"></div>
+        </div>
+        <div class="card-grid">
+          <!-- Microsoft Excel Certification Card -->
+          <article class="card cert-card">
+            <div>
+              <div class="cert-icon-badge" aria-hidden="true">📊</div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="card-title">Microsoft Excel Certification</h3>
+                  <p class="card-description">[Focusing on advanced spreadsheet formulas, data analysis, modeling, and business problem solving.]</p>
+                </div>
+                <span class="status-badge">
+                  <span class="status-badge-dot"></span>In Progress, Fall 2026
+                </span>
+              </div>
+            </div>
+
+            <!-- Proof Spot for Excel Certification -->
+            <!-- EDIT HERE: When you earn your certificate, replace the href below with your real verification link -->
+            <div class="cert-proof-spot">
+              <span>Verification / Proof:</span>
+              <a href="[Add your Certiport/Microsoft badge link here]" class="cert-proof-link" target="_blank" rel="noopener noreferrer">
+                📄 [Add Verification Link Upon Completion]
+              </a>
+            </div>
+          </article>
+
+          <!-- Scrum Certification Card -->
+          <article class="card cert-card">
+            <div>
+              <div class="cert-icon-badge" aria-hidden="true">⚡</div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="card-title">Scrum Certification</h3>
+                  <p class="card-description">[Focusing on agile principles, sprint planning, cross-functional collaboration, and project delivery.]</p>
+                </div>
+                <span class="status-badge">
+                  <span class="status-badge-dot"></span>Expected Spring 2027
+                </span>
+              </div>
+            </div>
+
+            <!-- Proof Spot for Scrum Certification -->
+            <div class="cert-proof-spot">
+              <span>Verification / Proof:</span>
+              <a href="[Add your Scrum credential link here]" class="cert-proof-link" target="_blank" rel="noopener noreferrer">
+                📄 [Add Verification Link Upon Completion]
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT HERE: Section 6 - Experience (Fixed Tenses: Present for Current, Past for Prior) -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Professional History</span>
+          <h2>Relevant Work Experience</h2>
+          <div class="section-underline"></div>
         </div>
 
-        <div class="card-grid" id="spotlight-grid">
-          <article class="card project-card" id="spotlight-card-1">
-            <div class="project-body">
-              <h3>Web Architecture & Agile Delivery</h3>
-              <p>
-                Collaborative web systems development adhering to agile methodologies and responsive design patterns.
-              </p>
-              <div class="tag-list">
-                <span class="tag">Web Design</span>
-                <span class="tag">Agile</span>
-                <span class="tag">GitHub</span>
-              </div>
+        <div class="experience-stack">
+          <!-- Job 1: LSU Department of Finance (CURRENT ROLE: PRESENT TENSE) -->
+          <article class="card">
+            <div class="experience-meta">
+              <h3 class="role-title">Student Worker</h3>
+              <span class="dates-meta">Sept 2025 – Present</span>
             </div>
-            <div class="project-footer">
-              <a href="project.html" class="project-link" id="link-project-details">Learn more in Projects →</a>
-            </div>
+            <div class="company-name">LSU Department of Finance &bull; Baton Rouge, Louisiana</div>
+            <ul class="bullet-list">
+              <li>Answer and direct phone calls, answering questions and providing information to callers and university visitors.</li>
+              <li>Manage the departmental email inbox, responding promptly to inquiries and routing messages to appropriate staff.</li>
+              <li>Assist professors and staff by printing documents, managing materials, and running administrative errands per their request.</li>
+            </ul>
           </article>
 
-          <article class="card project-card" id="spotlight-card-2">
-            <div class="project-body">
-              <h3>Economic Resource Optimization</h3>
-              <p>
-                Analytical evaluation of production possibilities and market dynamics for decision sciences.
-              </p>
-              <div class="tag-list">
-                <span class="tag">Decision Sciences</span>
-                <span class="tag">Economics</span>
-                <span class="tag">Analysis</span>
-              </div>
+          <!-- Job 2: Cracker Barrel (PAST ROLE: PAST TENSE) -->
+          <article class="card">
+            <div class="experience-meta">
+              <h3 class="role-title">Hostess</h3>
+              <span class="dates-meta">Oct 2023 – June 2024</span>
             </div>
-            <div class="project-footer">
-              <a href="project.html" class="project-link" id="link-project-economics">Learn more in Projects →</a>
-            </div>
+            <div class="company-name">Cracker Barrel &bull; Gonzales, Louisiana</div>
+            <ul class="bullet-list">
+              <li>Managed seating for guests in a fast-paced environment while providing attentive, hospitable service.</li>
+              <li>Coordinated with servers to ensure that guests were seated in a timely manner that optimized turnover.</li>
+              <li>Oversaw floorplan and waitlist management to ensure guests were seated at a desirable pace that staff could maintain.</li>
+            </ul>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT HERE: Section 7 - Organizations (Placed Last Before Contact) -->
+    <section class="organizations-section" id="organizations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Campus Involvement</span>
+          <h2>Organizations</h2>
+          <div class="section-underline"></div>
+        </div>
+        <div class="card">
+          <div class="experience-meta">
+            <h3 class="role-title">LSU AITP (Association of Information Technology Professionals)</h3>
+            <span class="status-badge">
+              <span class="status-badge-dot"></span>Member
+            </span>
+          </div>
+          <div class="company-name">Louisiana State University &bull; [Dates]</div>
+          <p class="card-description" style="margin-bottom: 0;">
+            [Active student member engaging in technical development workshops, IT guest speaker seminars, and professional networking within the Louisiana technology and business analytics community.]
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT HERE: Section 8 - Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Connect</span>
+          <h2>Contact</h2>
+          <div class="section-underline"></div>
+          <p class="lead" style="margin-top: 0.5rem; margin-bottom: 0;">
+            I welcome inquiries regarding business analytics internships, project collaborations, or networking. Reach out via email or connect with me on professional platforms.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <!-- Email Card -->
+          <a href="mailto:[my email]" class="contact-card" id="contact-email-link">
+            <div class="contact-icon-box" aria-hidden="true">✉</div>
+            <div class="contact-info">
+              <h4>Email</h4>
+              <p>[my email]</p>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="[my LinkedIn URL]" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-linkedin-link">
+            <div class="contact-icon-box" aria-hidden="true">in</div>
+            <div class="contact-info">
+              <h4>LinkedIn</h4>
+              <p>[my LinkedIn URL]</p>
+            </div>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-github-link">
+            <div class="contact-icon-box" aria-hidden="true">&lt;/&gt;</div>
+            <div class="contact-info">
+              <h4>GitHub</h4>
+              <p>https://github.com/madisond142</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
+  <!-- EDIT HERE: Footer -->
   <footer class="site-footer" id="main-footer">
     <div class="container footer-content">
-      <div class="social-links" id="footer-social-links">
-        <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer" class="social-link" id="link-github">GitHub</a>
-        <a href="resume.html" class="social-link" id="link-footer-resume">Resume</a>
-        <a href="project.html" class="social-link" id="link-footer-projects">Projects</a>
+      <div class="footer-brand">
+        <span class="brand-badge" style="width: 34px; height: 34px; font-size: 0.85rem;">MD</span>
+        <span>Madison DeLoach</span>
       </div>
-      <p class="copyright" id="footer-copyright">
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#certifications" class="footer-link">Certifications</a>
+        <a href="#experience" class="footer-link">Experience</a>
+        <a href="resume.html" class="footer-link">Resume</a>
+        <a href="#contact" class="footer-link">Contact</a>
+        <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </nav>
+      <p class="copyright">
         &copy; 2026 Madison DeLoach. All rights reserved.
       </p>
     </div>
   </footer>
+
+  <!-- Mobile Navigation Script -->
+  <script>
+    const navToggle = document.getElementById('mobile-nav-toggle');
+    const navMenu = document.getElementById('primary-nav-menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navMenu.classList.toggle('nav-open');
+      });
+      navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navToggle.setAttribute('aria-expanded', 'false');
+          navMenu.classList.remove('nav-open');
+        });
+      });
+    }
+  </script>
 
 </body>
 </html>

@@ -3,158 +3,310 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resume and professional credentials of Madison DeLoach - Education, Technical Skills, and Experience in ISDS.">
+  <meta name="description" content="Professional Resume of Madison DeLoach - Information Systems student at LSU with a concentration in Business Analytics. Expected graduation December 2027.">
   <meta name="author" content="Madison DeLoach">
   <title>Resume | Madison DeLoach</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- EDIT HERE: Navigation -->
   <header class="site-header" id="main-header">
     <nav class="nav-container" aria-label="Main Navigation">
       <a href="index.html" class="brand-logo" id="brand-logo-link">
         <span class="brand-badge">MD</span>
-        <span>Madison DeLoach</span>
+        <span class="brand-name">Madison DeLoach</span>
       </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav-menu">
+        <span class="hamburger-box">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </span>
+      </button>
+
+      <!-- Navigation Links -->
       <ul class="nav-menu" id="primary-nav-menu">
-        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
-        <li><a href="resume.html" class="nav-link active" id="nav-resume">Resume</a></li>
-        <li><a href="project.html" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="resume.html" class="nav-link active">Resume</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main id="main-content">
-    <div class="container" style="padding-top: 3.5rem; padding-bottom: 4rem;">
+    <div class="container" style="padding-top: 3.5rem; padding-bottom: 4.5rem;">
 
-      <!-- Header with Action -->
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 3rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 2rem;">
+      <!-- Top Action Bar -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
         <div>
           <span class="section-tag">Curriculum Vitae</span>
-          <h1 id="resume-title" style="margin-bottom: 0.5rem;">Resume & Experience</h1>
-          <p style="margin-bottom: 0;">Comprehensive overview of my education, academic milestones, and core competencies.</p>
+          <h2 style="margin-bottom: 0;">Resume</h2>
         </div>
         <div>
-          <button onclick="window.print()" class="btn btn-secondary" id="btn-print-resume">
+          <button onclick="window.print()" class="btn btn-secondary no-print" id="btn-print-resume">
             🖨️ Print / Save as PDF
           </button>
         </div>
       </div>
 
-      <!-- Education Section -->
-      <section class="resume-section" id="education-section">
-        <h2 id="education-heading">🎓 Education</h2>
-        <div class="timeline" id="education-timeline">
-          <div class="timeline-item" id="edu-item-1">
-            <div class="timeline-header">
-              <span class="timeline-role">Bachelor of Science in Information Systems & Decision Sciences</span>
-              <span class="timeline-meta">Expected 2026</span>
+      <!-- Resume Paper Card -->
+      <article class="resume-paper" id="resume-document">
+
+        <!-- EDIT HERE: Resume Header -->
+        <header class="resume-header">
+          <div>
+            <h1>Madison DeLoach</h1>
+            <p class="resume-subtitle">Information Systems Student &bull; Concentration in Business Analytics</p>
+            <div class="resume-contact-bar">
+              <span><strong>Email:</strong> <a href="mailto:[my email]">[my email]</a></span>
+              <span>&bull;</span>
+              <span><strong>LinkedIn:</strong> <a href="[my LinkedIn URL]" target="_blank" rel="noopener noreferrer">[my LinkedIn URL]</a></span>
+              <span>&bull;</span>
+              <span><strong>GitHub:</strong> <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer">madisond142</a></span>
+              <span>&bull;</span>
+              <span><strong>Location:</strong> Baton Rouge, LA</span>
             </div>
-            <div class="timeline-institution">E. J. Ourso College of Business</div>
-            <p>
-              Focused on the intersection of modern technology infrastructure, database architecture, data analytics, and organizational decision-making.
+          </div>
+        </header>
+
+        <!-- EDIT HERE: Education Section -->
+        <section class="resume-block" id="resume-education">
+          <h2 class="resume-heading">Education</h2>
+          <div class="resume-item">
+            <div class="experience-meta">
+              <h3 class="role-title">Louisiana State University</h3>
+              <span class="dates-meta">Expected Graduation: December 2027</span>
+            </div>
+            <div class="company-name">
+              Bachelor of Science in Information Systems & Decision Sciences (ISDS) &bull; E. J. Ourso College of Business
+            </div>
+            <ul class="bullet-list">
+              <li>
+                <strong>Academic Concentration:</strong> Business Analytics 
+                <span class="gpa-badge">GPA: 2.9</span>
+              </li>
+              <li>
+                <strong>Relevant Coursework:</strong> [Database Management Systems, Business Analytics & Modeling, Systems Analysis & Design, Quantitative Decision Modeling, Micro/Macro Economic Analysis]
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- EDIT HERE: Technical Skills Section (Analytics Focused) -->
+        <section class="resume-block" id="resume-skills">
+          <h2 class="resume-heading">Skills & Competencies</h2>
+          <div class="resume-item">
+            <ul class="bullet-list">
+              <li>
+                <strong>Data & Analytics:</strong> SQL (learning), Microsoft Excel (Advanced Modeling, PivotTables, VLOOKUP/XLOOKUP, Nested Formulas), Database Design (ER Diagrams, Relational Schemas, Table Relationships), Data Interpretation
+              </li>
+              <li>
+                <strong>Decision Sciences & Business Systems:</strong> Quantitative Decision Modeling, Systems Analysis, Business Process Documentation, Workflow Optimization
+              </li>
+              <li>
+                <strong>Methodologies:</strong> Agile / Scrum Fundamentals, Sprint Collaboration, Cross-Functional Team Support
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- EDIT HERE: Analytics Projects Section -->
+        <section class="resume-block" id="resume-projects">
+          <h2 class="resume-heading">Analytics Projects</h2>
+          
+          <!-- Project 1: SQL & Relational Database Analytics -->
+          <div class="resume-item">
+            <div class="experience-meta">
+              <h3 class="role-title">SQL & Relational Database Analytics</h3>
+              <span class="dates-meta">Fall 2026</span>
+            </div>
+            <div class="company-name">
+              Tools: SQL, Relational Schema Design, ER Modeling &bull; 
+              <a href="project.html" style="font-weight: 600; color: var(--gold-dark);">View Analytics Case Study</a>
+            </div>
+            <ul class="bullet-list">
+              <li>Engineered an Entity-Relationship (ER) model and normalized relational database schema (3NF) to track and analyze enterprise business transactions.</li>
+              <li>Constructed structured SQL queries using multi-table INNER/OUTER JOINs, GROUP BY aggregations, and subqueries to extract decision-making metrics.</li>
+              <li>Evaluated data integrity constraints and documented relational structures to support business reporting requirements.</li>
+            </ul>
+          </div>
+
+          <!-- Project 2: Academic Coursework Project Placeholder -->
+          <div class="resume-item" style="margin-top: 1.25rem;">
+            <div class="experience-meta">
+              <h3 class="role-title">[Academic Course Project / Case Study Title]</h3>
+              <span class="dates-meta">[Semester / Dates]</span>
+            </div>
+            <div class="company-name">Tools: [Excel, Database Systems, or Analytical Modeling] &bull; LSU Coursework</div>
+            <ul class="bullet-list">
+              <li>[Describe the business challenge, operational dataset, or case study analyzed in this coursework project.]</li>
+              <li>[Describe the analytical methods applied, formulas or tools used, and key business insights or recommendations delivered.]</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- EDIT HERE: Work Experience Section (Correct Tenses) -->
+        <section class="resume-block" id="resume-experience">
+          <h2 class="resume-heading">Work Experience</h2>
+          
+          <!-- Role 1: LSU Department of Finance (PRESENT TENSE) -->
+          <div class="resume-item">
+            <div class="experience-meta">
+              <h3 class="role-title">Student Worker</h3>
+              <span class="dates-meta">Sept 2025 – Present</span>
+            </div>
+            <div class="company-name">LSU Department of Finance &bull; Baton Rouge, Louisiana</div>
+            <ul class="bullet-list">
+              <li>Answer and direct phone calls, answering questions and providing information to callers and university visitors.</li>
+              <li>Manage the departmental email inbox, responding promptly to inquiries and routing messages to appropriate staff.</li>
+              <li>Assist professors and staff by printing documents, managing materials, and running administrative errands per their request.</li>
+            </ul>
+          </div>
+
+          <!-- Role 2: Cracker Barrel (PAST TENSE) -->
+          <div class="resume-item" style="margin-top: 1.35rem;">
+            <div class="experience-meta">
+              <h3 class="role-title">Hostess</h3>
+              <span class="dates-meta">Oct 2023 – June 2024</span>
+            </div>
+            <div class="company-name">Cracker Barrel &bull; Gonzales, Louisiana</div>
+            <ul class="bullet-list">
+              <li>Managed seating for guests in a fast-paced environment while providing attentive, hospitable customer service.</li>
+              <li>Coordinated with servers to ensure that guests were seated in a timely manner that optimized turnover.</li>
+              <li>Oversaw floorplan and waitlist management to ensure guests were seated at a desirable pace that staff could maintain.</li>
+            </ul>
+          </div>
+
+          <!-- SnoCreams Café (Preserved for your records) -->
+          <!--
+          <div class="resume-item" style="margin-top: 1.35rem;">
+            <div class="experience-meta">
+              <h3 class="role-title">Cashier</h3>
+              <span class="dates-meta">Feb 2022 – Feb 2023</span>
+            </div>
+            <div class="company-name">SnoCreams Café &bull; Prairieville, Louisiana</div>
+            <ul class="bullet-list">
+              <li>Took and processed customer orders with efficiency and effectiveness to be sent to the kitchen.</li>
+              <li>Prepared clean and quality snowballs and ice cream consistently.</li>
+              <li>Ensured proper delivery of orders with top-notch customer service.</li>
+            </ul>
+          </div>
+          -->
+        </section>
+
+        <!-- EDIT HERE: Certifications Section -->
+        <section class="resume-block" id="resume-certifications">
+          <h2 class="resume-heading">Certifications</h2>
+          
+          <!-- Excel Certification -->
+          <div class="resume-item">
+            <div class="experience-meta">
+              <h3 class="role-title">Microsoft Excel Certification</h3>
+              <span class="status-badge">
+                <span class="status-badge-dot"></span>In Progress, Fall 2026
+              </span>
+            </div>
+            <div class="company-name">Microsoft Official Certification Track</div>
+            <p class="card-description" style="margin-bottom: 0.35rem;">
+              Advanced spreadsheet modeling, nested lookup formulas, PivotTables, sensitivity tables, and quantitative decision modeling.
             </p>
-            <ul class="timeline-bullets">
-              <li><strong>Relevant Coursework:</strong> Information Systems Development, Quantitative Decision Models, Economic Analysis & Markets, Database Management Systems.</li>
-              <li>Active participation in business technology forums and collaborative development projects.</li>
+            <div style="font-size: 0.86rem; color: var(--text-muted);">
+              <strong>Verification:</strong> <a href="[Add your Certiport/Microsoft badge link here]" style="color: var(--gold-dark); font-weight: 600;">[Add Verification Link Upon Completion]</a>
+            </div>
+          </div>
+
+          <!-- Scrum Certification -->
+          <div class="resume-item" style="margin-top: 1.25rem;">
+            <div class="experience-meta">
+              <h3 class="role-title">Scrum Certification</h3>
+              <span class="status-badge">
+                <span class="status-badge-dot"></span>Expected Spring 2027
+              </span>
+            </div>
+            <div class="company-name">Agile Project Management & Scrum Framework</div>
+            <p class="card-description" style="margin-bottom: 0.35rem;">
+              Agile delivery principles, sprint iterations, product backlog management, user story definition, and cross-functional team leadership.
+            </p>
+            <div style="font-size: 0.86rem; color: var(--text-muted);">
+              <strong>Verification:</strong> <a href="[Add your Scrum certificate link here]" style="color: var(--gold-dark); font-weight: 600;">[Add Verification Link Upon Completion]</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- EDIT HERE: Organizations Section (Placed Last) -->
+        <section class="resume-block" id="resume-organizations">
+          <h2 class="resume-heading">Organizations & Campus Involvement</h2>
+          <div class="resume-item">
+            <div class="experience-meta">
+              <h3 class="role-title">LSU AITP (Association of Information Technology Professionals)</h3>
+              <span class="status-badge">
+                <span class="status-badge-dot"></span>Member
+              </span>
+            </div>
+            <div class="company-name">Louisiana State University &bull; [Dates]</div>
+            <ul class="bullet-list">
+              <li>Participate in professional development seminars, technology workshops, and networking events connecting students with regional IT executives.</li>
+              <li>Collaborate with student peers on emerging technology topics including database modernizations, enterprise systems, and business analytics career paths.</li>
             </ul>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Technical Skills Matrix -->
-      <section class="resume-section" id="skills-section">
-        <h2 id="skills-heading">🛠️ Core Competencies & Skills</h2>
-        <div class="skills-grid" id="skills-matrix">
-          
-          <div class="skills-category" id="skill-cat-analytics">
-            <h3>📈 Analytics & Decision Science</h3>
-            <p>Quantitative analysis, forecasting, and data interpretation methods.</p>
-            <div class="tag-list">
-              <span class="tag">Excel Modeling</span>
-              <span class="tag">Quantitative Analysis</span>
-              <span class="tag">Data Visualization</span>
-              <span class="tag">Statistical Modeling</span>
-            </div>
-          </div>
-
-          <div class="skills-category" id="skill-cat-tech">
-            <h3>💻 Technical & Web Skills</h3>
-            <p>Core programming, markup, and database foundations.</p>
-            <div class="tag-list">
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Git & GitHub</span>
-              <span class="tag">SQL Foundations</span>
-            </div>
-          </div>
-
-          <div class="skills-category" id="skill-cat-business">
-            <h3>🤝 Professional & Systems</h3>
-            <p>Strategic methodologies and project management concepts.</p>
-            <div class="tag-list">
-              <span class="tag">Agile Methodology</span>
-              <span class="tag">Scrum Practices</span>
-              <span class="tag">Systems Analysis</span>
-              <span class="tag">Process Optimization</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Experience & Academic Projects -->
-      <section class="resume-section" id="experience-section">
-        <h2 id="experience-heading">💼 Experience & Key Projects</h2>
-        <div class="timeline" id="experience-timeline">
-          
-          <div class="timeline-item" id="exp-item-1">
-            <div class="timeline-header">
-              <span class="timeline-role">Web Project Contributor & Analyst</span>
-              <span class="timeline-meta">2025 – Present</span>
-            </div>
-            <div class="timeline-institution">Academic Technology & Agile Projects</div>
-            <ul class="timeline-bullets">
-              <li>Architected and deployed responsive web interfaces adhering to modern accessibility and semantic standards.</li>
-              <li>Collaborated within agile teams to iterate on requirements, sprint milestones, and continuous GitHub deployment.</li>
-              <li>Structured clean codebase organization using version control best practices and branch management.</li>
-            </ul>
-          </div>
-
-          <div class="timeline-item" id="exp-item-2">
-            <div class="timeline-header">
-              <span class="timeline-role">Economics & Decision Sciences Research Analyst</span>
-              <span class="timeline-meta">2024 – 2025</span>
-            </div>
-            <div class="timeline-institution">Decision Analysis Projects</div>
-            <ul class="timeline-bullets">
-              <li>Formulated multi-variable models evaluating production possibilities and market dynamics under constraints.</li>
-              <li>Synthesized complex analytical findings into executive summaries and structured presentations.</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
+      </article>
 
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- EDIT HERE: Footer -->
   <footer class="site-footer" id="main-footer">
     <div class="container footer-content">
-      <div class="social-links" id="footer-social-links">
-        <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer" class="social-link" id="link-github">GitHub</a>
-        <a href="index.html" class="social-link" id="link-footer-home">Home</a>
-        <a href="project.html" class="social-link" id="link-footer-projects">Projects</a>
+      <div class="footer-brand">
+        <span class="brand-badge" style="width: 34px; height: 34px; font-size: 0.85rem;">MD</span>
+        <span>Madison DeLoach</span>
       </div>
-      <p class="copyright" id="footer-copyright">
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="index.html#about" class="footer-link">About</a>
+        <a href="index.html#skills" class="footer-link">Skills</a>
+        <a href="index.html#projects" class="footer-link">Projects</a>
+        <a href="index.html#certifications" class="footer-link">Certifications</a>
+        <a href="index.html#experience" class="footer-link">Experience</a>
+        <a href="resume.html" class="footer-link">Resume</a>
+        <a href="index.html#contact" class="footer-link">Contact</a>
+        <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </nav>
+      <p class="copyright">
         &copy; 2026 Madison DeLoach. All rights reserved.
       </p>
     </div>
   </footer>
+
+  <!-- Mobile Navigation Script -->
+  <script>
+    const navToggle = document.getElementById('mobile-nav-toggle');
+    const navMenu = document.getElementById('primary-nav-menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navMenu.classList.toggle('nav-open');
+      });
+      navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navToggle.setAttribute('aria-expanded', 'false');
+          navMenu.classList.remove('nav-open');
+        });
+      });
+    }
+  </script>
 
 </body>
 </html>
