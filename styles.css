@@ -718,6 +718,29 @@ section {
   box-shadow: 0 0 6px var(--gold);
 }
 
+/* Standout styling for earned credentials */
+.status-badge.status-badge-earned,
+.status-badge-earned {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #FFFFFF !important;
+  border: 1.5px solid var(--gold);
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(91, 20, 37, 0.28), 0 0 10px var(--gold-glow);
+  letter-spacing: 0.01em;
+}
+
+.status-badge.status-badge-earned .status-badge-dot,
+.status-badge-earned .status-badge-dot {
+  background-color: var(--gold);
+  box-shadow: 0 0 8px #FFD700, 0 0 12px var(--gold);
+}
+
+.status-badge.status-badge-earned:hover,
+.status-badge-earned:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(91, 20, 37, 0.35), 0 0 12px var(--gold-glow);
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -832,6 +855,34 @@ section {
 .cert-proof-link:hover {
   color: var(--primary);
   text-decoration: underline;
+}
+
+/* Verify Button on Certification Cards */
+.btn-verify {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.42rem 1.15rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--text-inverse) !important;
+  border: 1px solid var(--gold-border);
+  box-shadow: 0 2px 8px rgba(91, 20, 37, 0.18);
+  transition: var(--transition-fast);
+}
+
+.btn-verify:hover {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  border-color: var(--gold);
+  color: var(--text-inverse) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(91, 20, 37, 0.28), 0 0 10px var(--gold-glow);
 }
 
 .gpa-badge {
@@ -1366,6 +1417,15 @@ section {
     box-shadow: none !important;
     padding: 0 !important;
     margin: 0 !important;
+  }
+
+  .btn-verify {
+    background: transparent !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+    box-shadow: none !important;
+    padding: 0.15rem 0.55rem !important;
+    font-size: 8.5pt !important;
   }
 
   .resume-header {
