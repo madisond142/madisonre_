@@ -1335,6 +1335,47 @@ section {
   line-height: 1.65;
 }
 
+/* Project Artifacts Placeholder Area */
+.project-placeholder-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 2rem;
+  text-align: center;
+  border: 2px dashed var(--gold-border);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.project-placeholder-area:hover {
+  border-color: var(--gold);
+  background-color: #FFFFFF;
+}
+
+.project-placeholder-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-placeholder-label {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.project-placeholder-hint {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 /* --------------------------------------------------------------------------
    Site Footer
    -------------------------------------------------------------------------- */

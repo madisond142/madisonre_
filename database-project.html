@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Relational Database for a Local Business - ISDS Consulting Project by Madison DeLoach at LSU. MySQL database development, ERDPlus modeling, and structured SQL business intelligence.">
+  <meta name="author" content="Madison DeLoach">
+  <title>Relational Database for a Local Business | Madison DeLoach</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- EDIT HERE: Navigation -->
+  <header class="site-header" id="main-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="index.html" class="brand-logo" id="brand-logo-link">
+        <span class="brand-badge">MD</span>
+        <span class="brand-name">Madison DeLoach</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav-menu">
+        <span class="hamburger-box">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </span>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="primary-nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="database-project.html" class="nav-link active">Database Project</a></li>
+        <li><a href="index.html#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- EDIT HERE: Project Hero -->
+    <section class="project-hero">
+      <div class="container">
+        <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+          <span class="section-tag">IS Consulting Project</span>
+          <span class="status-badge">
+            <span class="status-badge-dot"></span>In progress, final deliverable December 2026
+          </span>
+        </div>
+        <h1 style="margin-top: 0.5rem; margin-bottom: 0.75rem;">Relational Database for a Local Business</h1>
+        <p class="lead" style="max-width: 840px; margin-bottom: 0;">
+          Working on a 4-5 person team acting as an IS consulting firm for [client name, type of business]. Gathered business rules, designed an ER diagram and relational schema in ERDPlus, and am building a MySQL database to answer 10 real business questions with SQL queries using joins, subqueries, aggregation, and GROUP BY/HAVING.
+        </p>
+
+        <!-- Project Metadata Overview -->
+        <div class="project-meta-grid">
+          <div class="project-meta-item">
+            <h4>Client</h4>
+            <p>[client name, type of business]</p>
+          </div>
+          <div class="project-meta-item">
+            <h4>My Role</h4>
+            <p>Systems Analyst & Database Developer</p>
+          </div>
+          <div class="project-meta-item">
+            <h4>Core Tools</h4>
+            <p>ERDPlus & MySQL Workbench</p>
+          </div>
+          <div class="project-meta-item">
+            <h4>Status</h4>
+            <p>In progress, final deliverable December 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: 3.5rem; padding-bottom: 4.5rem;">
+
+      <!-- EDIT HERE: Status Section -->
+      <section class="resume-block" style="padding: 0; margin-bottom: 3.5rem;" id="project-status">
+        <span class="section-tag">Status</span>
+        <h2>Project Status</h2>
+        <div class="section-underline" style="margin-bottom: 1.5rem;"></div>
+        <div class="card" style="border-left: 5px solid var(--gold);">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <h3 class="card-title" style="margin-bottom: 0.35rem;">Current Milestone</h3>
+              <p class="card-description" style="margin-bottom: 0; font-size: 1.05rem;">
+                In progress, final deliverable December 2026
+              </p>
+            </div>
+            <span class="status-badge">
+              <span class="status-badge-dot"></span>In progress, final deliverable December 2026
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDIT HERE: Overview Section -->
+      <section class="resume-block" style="padding: 0; margin-bottom: 3.5rem;" id="project-overview">
+        <span class="section-tag">Context</span>
+        <h2>Overview</h2>
+        <div class="section-underline" style="margin-bottom: 1.5rem;"></div>
+        <div class="card" style="padding: 2.25rem;">
+          <h3 class="card-title" style="margin-bottom: 0.5rem;">The Client</h3>
+          <p style="font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+            <strong>Client:</strong> [client name] &bull; [type of business]
+          </p>
+          <h3 class="card-title" style="margin-bottom: 0.5rem;">The Business Problem</h3>
+          <p style="font-size: 1.05rem; line-height: 1.75; margin-bottom: 0;">
+            [Write one sentence describing the business problem the database solves. For example: The client currently relies on decentralized records and manual transaction tracking that lead to operational bottlenecks, delayed inventory restocking, and limited managerial insight into product profitability.]
+          </p>
+        </div>
+      </section>
+
+      <!-- EDIT HERE: My Role Section -->
+      <section class="resume-block" style="padding: 0; margin-bottom: 3.5rem;" id="project-role">
+        <span class="section-tag">Team Contribution</span>
+        <h2>My Role</h2>
+        <div class="section-underline" style="margin-bottom: 1.5rem;"></div>
+        <p class="lead" style="margin-bottom: 1.5rem;">
+          Working on a 4-5 person team acting as an IS consulting firm for [client name, type of business]. I contribute across key analytical and development stages:
+        </p>
+
+        <div class="card-grid">
+          <!-- Systems Analyst -->
+          <div class="card">
+            <h3 class="card-title">Systems Analyst</h3>
+            <p class="card-description">
+              Gathered and documented core operational business rules, analyzed stakeholder workflow requirements, and translated real-world processes into structured data specifications.
+            </p>
+          </div>
+
+          <!-- Database Designer -->
+          <div class="card">
+            <h3 class="card-title">Database Designer</h3>
+            <p class="card-description">
+              Architected the conceptual Entity-Relationship (ER) diagram and relational schema in ERDPlus, enforcing Third Normal Form (3NF) to eliminate data redundancy.
+            </p>
+          </div>
+
+          <!-- Database Developer -->
+          <div class="card">
+            <h3 class="card-title">Database Developer</h3>
+            <p class="card-description">
+              Built the MySQL database structure, implemented relational tables with primary and foreign key constraints, and populated sample transaction datasets.
+            </p>
+          </div>
+
+          <!-- Data Analyst -->
+          <div class="card">
+            <h3 class="card-title">Data Analyst</h3>
+            <p class="card-description">
+              Authored analytical SQL queries with multi-table joins, nested subqueries, aggregations, and GROUP BY/HAVING clauses to extract answers to 10 real business questions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDIT HERE: Tools Section -->
+      <section class="resume-block" style="padding: 0; margin-bottom: 3.5rem;" id="project-tools">
+        <span class="section-tag">Technology</span>
+        <h2>Tools</h2>
+        <div class="section-underline" style="margin-bottom: 1.5rem;"></div>
+
+        <div class="tools-grid">
+          <div class="tool-card">
+            <h4>ERDPlus</h4>
+            <p>Employed for conceptual database modeling, entity definition, relationship cardinality mapping, and generating normalized relational schemas.</p>
+          </div>
+
+          <div class="tool-card">
+            <h4>MySQL Workbench</h4>
+            <p>Utilized as the primary relational DBMS environment to create tables, enforce referential integrity constraints, insert test data, and execute SQL analytical queries.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDIT HERE: Process Section -->
+      <section class="resume-block" style="padding: 0; margin-bottom: 3.5rem;" id="project-process">
+        <span class="section-tag">Lifecycle</span>
+        <h2>Process</h2>
+        <div class="section-underline" style="margin-bottom: 1.5rem;"></div>
+        <p class="lead" style="margin-bottom: 0;">
+          Our consulting team structured the database development lifecycle across five iterative stages:
+        </p>
+
+        <div class="process-list">
+          <!-- Phase 1: Business Rules -->
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Business Rules</h3>
+              <p>
+                Conducted stakeholder interviews with [client name] to capture and document precise business rules governing customers, orders, inventory, transactions, and employee roles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 2: ER Diagram -->
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>ER Diagram</h3>
+              <p>
+                Drafted conceptual Entity-Relationship diagrams in ERDPlus, identifying entity types, primary keys, and cardinality constraints (1:1, 1:N, M:N) while resolving many-to-many associations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 3: Relational Schema -->
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Relational Schema</h3>
+              <p>
+                Mapped the ER diagram into a normalized relational schema. Ensured Third Normal Form (3NF) compliance to protect data integrity, prevent anomalies, and establish foreign key relationships.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 4: MySQL Tables and Data -->
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>MySQL Tables and Data</h3>
+              <p>
+                Wrote DDL scripts in MySQL Workbench to create physical database tables with constraints (PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE) and populated them with realistic sample records.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 5: Business Questions Answered with SQL -->
+          <div class="process-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h3>Business Questions Answered with SQL</h3>
+              <p>
+                Formulated and validated 10 real-world business queries utilizing INNER/LEFT JOINs, subqueries, aggregate functions (COUNT, SUM, AVG), and GROUP BY/HAVING filtering to provide managerial insights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDIT HERE: Placeholder Area for Diagrams and SQL Files -->
+      <section class="resume-block" style="padding: 0; margin-bottom: 3.5rem;" id="project-artifacts">
+        <span class="section-tag">Deliverables & Evidence</span>
+        <h2>Project Artifacts</h2>
+        <div class="section-underline" style="margin-bottom: 1.5rem;"></div>
+
+        <div class="project-placeholder-area">
+          <div class="project-placeholder-icon" aria-hidden="true">📁</div>
+          <h3 class="project-placeholder-label">Diagrams and SQL coming soon</h3>
+          <p class="project-placeholder-hint">
+            <!-- EDIT HERE: Add your ER diagram images, relational schema screenshots, and SQL script snippets or downloadable files here once final deliverables are submitted. -->
+            [Diagrams and SQL coming soon: Spot reserved for uploading ERDPlus diagrams, relational schema exports, and final MySQL query scripts.]
+          </p>
+        </div>
+      </section>
+
+      <!-- EDIT HERE: CTA Navigation Links -->
+      <section class="card" style="text-align: center; padding: 3rem 2rem; border-top: 4px solid var(--gold);" id="project-cta">
+        <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem;">Explore More of My Work</h3>
+        <p class="lead" style="max-width: 600px; margin: 0 auto 1.75rem;">
+          Return to the home page to view other coursework, explore my skills, or review my full resume.
+        </p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="index.html" class="btn btn-primary" id="btn-project-home">
+            Back to Home
+          </a>
+          <a href="resume.html" class="btn btn-secondary" id="btn-project-resume">
+            View Resume &rarr;
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- EDIT HERE: Footer -->
+  <footer class="site-footer" id="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-badge" style="width: 34px; height: 34px; font-size: 0.85rem;">MD</span>
+        <span>Madison DeLoach</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="index.html#about" class="footer-link">About</a>
+        <a href="index.html#skills" class="footer-link">Skills</a>
+        <a href="index.html#projects" class="footer-link">Projects</a>
+        <a href="database-project.html" class="footer-link">Database Project</a>
+        <a href="index.html#certifications" class="footer-link">Certifications</a>
+        <a href="index.html#experience" class="footer-link">Experience</a>
+        <a href="resume.html" class="footer-link">Resume</a>
+        <a href="index.html#contact" class="footer-link">Contact</a>
+        <a href="https://github.com/madisond142" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </nav>
+      <p class="copyright">
+        &copy; 2026 Madison DeLoach. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Navigation Script -->
+  <script>
+    const navToggle = document.getElementById('mobile-nav-toggle');
+    const navMenu = document.getElementById('primary-nav-menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navMenu.classList.toggle('nav-open');
+      });
+      navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navToggle.setAttribute('aria-expanded', 'false');
+          navMenu.classList.remove('nav-open');
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
